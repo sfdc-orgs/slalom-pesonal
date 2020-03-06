@@ -1,0 +1,10 @@
+<template>
+    <div style="position: absolute;right: 0px;z-index: 9;top:8px;">
+        <lightning-button variant="brand" label="Add/Edit Specialist View" title="Add/Edit Specialist View"
+            onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </div>
+    <div style="height: 410px;margin-top:30px;">
+        <lightning-datatable key-field="id" data={data} columns={columns} onrowaction={handleRowAction}>
+        </lightning-datatable>
+    </div>
+</template>

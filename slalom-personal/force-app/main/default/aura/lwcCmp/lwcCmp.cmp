@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable" >
+    <!--Adding Lightning Web COmponent-->
+    <c:apexConnectionDemo />
+</aura:component>

@@ -1,0 +1,22 @@
+<template>
+    <!--Account Information-->
+    <lightning-card title="Account Quick Create" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Id" disabled value={accountId}></lightning-input>
+            <lightning-input label="Name" onchange={handleNameChange} class="slds-m-bottom_x-small"></lightning-input>
+            <div style="float:left">
+                <lightning-button label="Create Account" variant="brand" onclick={createAccount}></lightning-button>
+            </div>
+            <div style="float:right">
+                <div onkeyup={handleAccountSearch}>
+                    <lightning-input name="enter-account" label="Search Account" type="search">
+                    </lightning-input>
+                </div>
+            </div>
+        </div>
+        <div class="account-grid-height">
+            <lightning-datatable key-field="id" data={data} columns={columns}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

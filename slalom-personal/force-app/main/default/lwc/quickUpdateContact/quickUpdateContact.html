@@ -1,0 +1,24 @@
+<template>
+  <lightning-card title="Quick Update Contact">
+    <lightning-record-edit-form
+      record-id={recordId}
+      object-api-name={objectApiName}
+    >
+    <lightning-messages></lightning-messages>
+    <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field field-name="Name"></lightning-input-field>
+                <lightning-input-field field-name="Title"></lightning-input-field>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field field-name="Phone"></lightning-input-field>
+                <lightning-input-field field-name="Email"></lightning-input-field>
+            </div>
+        </div>
+        <div class="slds-m-top_medium">
+                <lightning-button class="slds-m-around_xx-small" label="Cancel" onclick={handleReset}></lightning-button>
+            <lightning-button type="submit" variant="brand" label="Save"></lightning-button>
+        </div>
+    </lightning-record-edit-form>
+  </lightning-card>
+</template>

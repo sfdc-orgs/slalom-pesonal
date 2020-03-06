@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="">
+    <div class="slds-card__body slds-card__body_inner">
+      <c-contact-Title contact={contact}>
+        <span slot="startMessage"><b>{startMessage}</b></span>
+        <span slot="endMessage"><b>{endMessage}</b></span>
+      </c-contact-Title>
+      <button onclick={changeSlotContent}>Slot Change Event</button>
+    </div>
+  </lightning-card>
+</template>

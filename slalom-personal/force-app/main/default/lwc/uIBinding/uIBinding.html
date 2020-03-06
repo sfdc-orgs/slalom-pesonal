@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Lighning Web Components!" icon-name="custom:custom14">
+        <div class="slds-card__body slds-card__body_inner"> 
+            <div>Hello, {username}</div>
+            <div>{greetigs}</div>
+            <div>{announcements}</div>
+            <template if:true={isDisplayText}>
+                <div>Entered Text - {inputText}</div>
+            </template>
+            <input type="text" value={inputText} oninput={handleInputTextChange}/>    
+            <div class="list-first"></div>
+            <div style="font-weight:bold;margin-top:1%;">List of Contacts using for each loop!</div>
+            <ul>
+                <template for:each={contacts} for:item="contact">
+                    <li key={contact.Id}>
+                        {contact.Name}, {contact.Title}
+                    </li>
+                </template>
+            </ul>
+            <div style="font-weight:bold;margin-top:1%;">List of Contacts using Itearator!</div>
+            <ul>
+                <template iterator:it={contacts}>
+                    <li key={it.value.Id}>
+                        <div if:true={it.first} class="list-first"></div>
+                        {it.value.Name}, {it.value.Title}
+                        <div if:true={it.last} class="list-last"></div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>

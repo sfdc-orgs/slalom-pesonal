@@ -1,0 +1,14 @@
+<template>
+    <template if:true={contact}>
+        <div>
+            <slot name="startMessage" onslotchange={handleSlotChange}></slot>
+        </div>
+        <div>{contact.Name}</div>
+        <div>{contact.Title}</div>
+        <div>Title Length : {titleLength}</div>
+        <div><img src={contact.Picture} alt="Profile photo" /></div>
+        <div>
+            <slot name="endMessage"></slot>
+        </div>
+    </template>
+</template>

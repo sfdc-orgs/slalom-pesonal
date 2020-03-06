@@ -1,0 +1,17 @@
+<aura:component extends="c:LCC_GenericLightningComponent" >
+    <aura:set attribute="partially" value="false"></aura:set>
+    <!-- User Interface -->
+    	
+    <div class="slds-scrollable slds-p-around_medium slds-text-heading_small" id="modal-content-id-1">
+        <p class="slds-hyphenate" style="height: 6.75rem;">Quick Create Coming Soon!</p>
+        <br/>
+    </div>
+    <div class="slds-modal__footer">
+        <lightning:button class="slds-button_brand" onclick="{!c.accept}" label="Accept"/>
+    </div>
+
+
+    <!-- The height of the modal is defined in Salesforce, when you create the new action. -->
+    <!-- Recommended height size: 250px -->
+	
+</aura:component>

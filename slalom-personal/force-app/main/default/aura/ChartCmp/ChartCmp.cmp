@@ -1,0 +1,10 @@
+<aura:component controller="GraphController" implements="flexipage:availableForAllPageTypes" access="global">
+	<ltng:require scripts="{!$Resource.Chart}" afterScriptsLoaded="{!c.ctr}"/>
+    
+    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--3-of-4">
+        <canvas aura:id="barChart" id="barChart" />
+    </div>
+    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-2 slds-medium-size--3-of-4">
+        <canvas aura:id="lineChart" id="lineChart"/>
+    </div>
+</aura:component>

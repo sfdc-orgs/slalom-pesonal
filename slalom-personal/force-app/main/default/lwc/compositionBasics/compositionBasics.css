@@ -1,0 +1,15 @@
+c-contact-Title{
+    position: relative;
+    border: solid 1px #ecebea;
+    border-radius: 4px;
+    display: block;
+    padding: 0 2px;
+}
+c-contact-Title:before {
+    color: #dddbda;
+    position: absolute;
+    top: -9px;
+    left: 4px;
+    background-color: #ffffff;
+    padding: 0 4px;
+}

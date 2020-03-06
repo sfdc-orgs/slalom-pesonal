@@ -1,0 +1,18 @@
+<template>
+  <lightning-card  title="Quick Update Account">
+        <lightning-record-edit-form
+                record-id={recordId}
+                object-api-name="Account">
+                <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Name"></lightning-input-field>
+                            <lightning-input-field field-name="Phone"></lightning-input-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input-field field-name="Industry"></lightning-input-field>
+                            <lightning-input-field field-name="AnnualRevenue"></lightning-input-field>
+                        </div>
+                    </div>
+            </lightning-record-edit-form>
+    </lightning-card>
+</template>
